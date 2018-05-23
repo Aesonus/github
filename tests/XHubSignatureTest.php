@@ -43,9 +43,6 @@ class XHubSignatureTest extends PHPUnit_Framework_TestCase {
     /// Test static helper methods
     ///
 
-    /**
-     * @covers XHubSignature::validatePayload
-     */
     public function testhashPayload () {
         $this->assertSame(
             EMPTY_DEFAULT_HASH_ALGO_SIGNATURE,
@@ -57,9 +54,6 @@ class XHubSignatureTest extends PHPUnit_Framework_TestCase {
         );
     }
 
-    /**
-     * @covers XHubSignature::validatePayload
-     */
     public function testValidatePayload () {
         $this->assertFalse(XHubSignature::validatePayload("", "", ""));
 

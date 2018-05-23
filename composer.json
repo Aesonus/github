@@ -30,10 +30,10 @@
   },
   "autoload": {
     "psr-4": {
-      "Keruald\\GitHub\\": ""
+      "Keruald\\GitHub\\": "src/"
     }
   },
   "scripts": {
-    "test": "phpunit tests"
+    "test": "phpunit"
   }
 }
