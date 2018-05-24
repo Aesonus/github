@@ -1,39 +1,42 @@
 {
-  "name": "keruald/github",
-  "description": "X-Hub-Signature generator and validator",
-  "license": "BSD-2-Clause",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/keruald/github"
+    "name": "aesonus/github",
+    "description": "X-Hub-Signature generator and validator",
+    "license": "BSD-2-Clause",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/keruald/github"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Sébastien Santoro",
+            "email": "dereckson@espace-win.org"
+        },
+        {
+            "name": "Cory Laughlin",
+            "email": "corylcomposinger@gmail.com"
+        }
+    ],
+    "keywords": [
+        "X-Hub"
+    ],
+    "support": {
+        "irc": "irc://irc.freenode.net/wolfplex",
+        "issues": "http://devcentral.nasqueron.org"
+    },
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keruald\\GitHub\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
     }
-  ],
-  "authors": [
-    {
-      "name": "Sébastien Santoro",
-      "email": "dereckson@espace-win.org"
-    }
-  ],
-  "keywords": [
-    "keruald",
-    "GitHub"
-  ],
-  "support": {
-    "irc": "irc://irc.freenode.net/wolfplex",
-    "issues": "http://devcentral.nasqueron.org"
-  },
-  "require": {
-    "php": ">=5.6.0"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "5.0.*"
-  },
-  "autoload": {
-    "psr-4": {
-      "Keruald\\GitHub\\": "src/"
-    }
-  },
-  "scripts": {
-    "test": "phpunit"
-  }
 }
